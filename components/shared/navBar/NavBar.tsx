@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Theme from "./Theme";
+import MobileNavBar from "./MobileNavBar";
+import GlobalSearch from "../search/GlobalSearch";
 
 function NavBar() {
   const user = useUser();
@@ -21,7 +23,7 @@ function NavBar() {
           <span className="text-primary-500 ">Flow</span> Dev
         </p>
       </Link>
-      GlobalSearch
+      <GlobalSearch />
       <div className="flex-between gap-5">
         <Theme />
         <div>
@@ -38,6 +40,7 @@ function NavBar() {
             />
           ) : null}
         </div>
+        <MobileNavBar />
       </div>
     </nav>
   );

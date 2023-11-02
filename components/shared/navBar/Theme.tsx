@@ -65,7 +65,7 @@ const Theme = () => {
                 className={`body-semibold text-light-500 ${
                   mode === theme.value
                     ? "text-primary-500"
-                    : "text-dark-100_light900"
+                    : "text-dark100_light900"
                 } `}
               >
                 {theme.label}
